@@ -16,8 +16,8 @@ See build.boot for a number of `serve-*` tasks. Each of these is a sample of dif
 
 | task         | works? | STDOUT | logs  | notes |
 |:------------:|:------:|:------:|:-----:|:------|
-| `serve-pod`  | ✗      | ✔      | ✘     | |
-| `serve-pod-init` | ✗  | ✗      | ✗     | Fails to launch, can't find boot/core.clj |
+| `serve-pod`  | ✘      | ✔      | ✘     | |
+| `serve-pod-init` | ✘  | ✘      | ✘     | Fails to launch, can't find boot/core.clj |
 | `serve-main` | ✔      | ✔      | ✔     | |
 
 To examine a test case:
