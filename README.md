@@ -12,7 +12,10 @@ same memory space as the main Pod. As a result, everything but `serve`'s
 See build.boot for a number of `serve-*` tasks. Each of these is a sample of different behavior.
 
 - `serve-pod` - boot-http (worker pod) with no `:init`
+- `serve-pod-init` - boot-http and an attempt to `:init` logging (doesn't work)
 - `serve-main` - raw run-jetty (main pod) **works**
+
+## Test Cases
 
 | task         | works? | STDOUT | logs  | notes |
 |:------------:|:------:|:------:|:-----:|:------|
@@ -20,7 +23,7 @@ See build.boot for a number of `serve-*` tasks. Each of these is a sample of dif
 | `serve-pod-init` | ✘  | ✘      | ✘     | Fails to launch, can't find boot/core.clj |
 | `serve-main` | ✔      | ✔      | ✔     | |
 
-To examine a test case:
+### To examine a test case:
 
 1. Launch the server with `boot <serve-* task>`
 2. Note the output of `boot`
